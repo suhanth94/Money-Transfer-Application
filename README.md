@@ -13,6 +13,8 @@ From command line:
 1. Build the project using pom.xml - > mvn clean install
 2. Run the application -> java -jar target/revolut-1.0-SNAPSHOT.jar
 
+Note: Application runs on port 4567 by default.
+
 ### Tech/Tools:
 
 1. Java 8
