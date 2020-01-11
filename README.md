@@ -1,6 +1,6 @@
 # Money Transfer Application
 
-### Instructions to Build & Run
+### Instructions to Build & Run:
 
 Steps to run the application from IDE:
 
