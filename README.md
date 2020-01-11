@@ -71,3 +71,14 @@ From command line:
 ```
 
 PS: API test suite is checked into this repo inside resources folder which can be imported onto POSTMAN.
+
+### Implementation Details:
+
+1. There's one main class which initiates the REST API and its controllers.
+2. Both account and transaction have seperate controller classes for handlings its corresponding routes
+3. Input validations are handled in a common validation utility and applied wherever necessary in controllers.
+4. Service classes each having its own for handling specific operations has the ID generated and automatically assigned. In-memory data structures are used for storage.
+5. A custom exception handler is registered during API initialization and sets error code to response based on the type of exception.
+6. A new custom exception called "BusinessException" is created for application errors.
+7. GSON is used for request parsing and response handling
+8. For concurrency, reentrant read write locks are used at the time of amount transfer.
